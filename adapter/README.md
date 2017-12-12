@@ -107,7 +107,8 @@ Use the Adapter pattern when
 * most of the applications using third party libraries use adapters as a middle layer between the application and the 3rd party library to decouple the application from the library. If another library has to be used only an adapter for the new library is required without having to change the application code.
 
 ## Consequences:
-Class and object adapters have different trade-offs. A class adapter
+Class and object adapters have different trade-offs. 
+A class adapter
 
 *	adapts Adaptee to Target by committing to a concrete Adaptee class. As a consequence, a class adapter won’t work when we want to adapt a class and all its subclasses.
 *	let’s Adapter override some of Adaptee’s behavior, since Adapter is a subclass of Adaptee.
